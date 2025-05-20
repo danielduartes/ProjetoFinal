@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agendar || Alan do Corte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="./output.css" rel="stylesheet">
-  <link href="./output1.css" rel="stylesheet">
   <link rel="shortcut icon" href="imagens/Aalan.webp" type="image/x-icon">
 </head>
 <body>
@@ -30,67 +30,82 @@
             </nav>
         </div>
     </header>
-    <div class="m-20">
-        <form>
-            <input type="text" placeholder="Nome Completo">
-            <br>
-            <br>
-            <input type="tel" placeholder="Telefone (xx) xxxxx-xxxx">
-            <br>
-            <br>
-            <select>
-                <option value="Selecione o seu serviço">Escolha o seu serviço</option>
-                <option value="Corte">Corte  R$30,00</option>
-                <option value="Corte + Barba">Corte + Barba  R$50,00</option>
-                <option value="Corte + Sobrancelha">Corte + Sobrancelha  R$35,00</option>
-                <option value="Corte + Barba + Sobrancelha">Corte + Barba + Sobrancelha  R$55,00</option>
-                <option value="Corte + Hidratação">Corte + Hidratação  R$40,00</option>
-                <option value="Corte + Pigmentação">Corte + Pigmentação  R$50,00</option>
-                <option value="Luzes + Corte">Luzes + Corte  R$80,00</option>
-                <option value="Barba">Barba  R$25,00</option>
-                <option value="Cavanhaque">Cavanhaque  R$15,00</option>
-                <option value="Acabamento + Finalização">Acabamento + Finalização  R$20,00</option>
-                <option value="Hidratação">Hidratação  R$25,00</option>
-                <option value="Selagem">Selagem  R$60,00</option>
-                <option value="Botox">Botox  R$60,00</option>
-                <option value="Alisamento Americano">Alisamento Americano  R$45,00</option>
-                <option value="Luzes">Luzes  R$60,00</option>
-                <option value="Platinado">Platinado  R$70,00</option>
-                <option value="Pigmentação">Pigmentação  R$25,00</option>
-                <option value="Pigmentação de Barba">Pigmentação de Barba  R$20,00</option>
-                <option value="Lavagem + Finalização">Lavagem + Finalização  R$15,00</option>
-                <option value="Platinado + Corte">Platinado + Corte  R$100,00</option>
-                <option value="Corte + Selagem">Corte + Selagem  R$90,00</option>
-            </select>
-            <br>
-            <br>
-            <select>
-                <option value="" disabled selected>Horário</option>
-                <option value="">8:00</option>
-                <option value="">8:30</option>
-                <option value="">9:00</option>
-                <option value="">9:30</option>
-                <option value="">10:00</option>
-                <option value="">10:30</option>
-                <option value="">11:00</option>
-                <option value="">13:00</option>
-                <option value="">13:30</option>
-                <option value="">14:00</option>
-                <option value="">14:30</option>
-                <option value="">15:00</option>
-                <option value="">15:30</option>
-                <option value="">16:00</option>
-                <option value="">16:30</option>
-                <option value="">17:00</option>
-                <option value="">17:30</option>
-                <option value="">18:00</option>
-                <option value="">18:30</option>
-                <option value="">19:00</option>
-            </select>
-            <br>
-            <br>
-            <button>
-                Agendar
-            </button>
-        </form>
+    <div>
+        <section class="items-center m-20 bg-orange-300 w-80 flex justify-center py-10 rounded-lg">
+            <form>
+                <p style="font-family: 'Noto Sans', sans-serif; font-weight: bold;">Faça o seu agendamento</p>
+                <br>
+                <br>
+                <br>
+                <input class="px-2 rounded-lg" type="text" placeholder="Nome Completo">
+                <br>
+                <br>
+                <input class="px-2 rounded-lg" type="tel" placeholder="Telefone (xx) xxxxx-xxxx">
+                <br>
+                <br>
+                <select class="rounded-lg">
+                    <option value="Selecione o seu serviço">Escolha o seu serviço</option>
+                    <option value="Corte">Corte  R$30,00</option>
+                    <option value="Corte + Barba">Corte + Barba  R$50,00</option>
+                    <option value="Corte + Sobrancelha">Corte + Sobrancelha  R$35,00</option>
+                    <option value="Corte + Barba + Sobrancelha">Corte + Barba + Sobrancelha  R$55,00</option>
+                    <option value="Corte + Hidratação">Corte + Hidratação  R$40,00</option>
+                    <option value="Corte + Pigmentação">Corte + Pigmentação  R$50,00</option>
+                    <option value="Luzes + Corte">Luzes + Corte  R$80,00</option>
+                    <option value="Barba">Barba  R$25,00</option>
+                    <option value="Cavanhaque">Cavanhaque  R$15,00</option>
+                    <option value="Acabamento + Finalização">Acabamento + Finalização  R$20,00</option>
+                    <option value="Hidratação">Hidratação  R$25,00</option>
+                    <option value="Selagem">Selagem  R$60,00</option>
+                    <option value="Botox">Botox  R$60,00</option>
+                    <option value="Alisamento Americano">Alisamento Americano  R$45,00</option>
+                    <option value="Luzes">Luzes  R$60,00</option>
+                    <option value="Platinado">Platinado  R$70,00</option>
+                    <option value="Pigmentação">Pigmentação  R$25,00</option>
+                    <option value="Pigmentação de Barba">Pigmentação de Barba  R$20,00</option>
+                    <option value="Lavagem + Finalização">Lavagem + Finalização  R$15,00</option>
+                    <option value="Platinado + Corte">Platinado + Corte  R$100,00</option>
+                    <option value="Corte + Selagem">Corte + Selagem  R$90,00</option>
+                </select>
+                <br>
+                <br>
+                <select class="px-2 rounded-lg">
+                    <option value="" disabled selected>Horário</option>
+                    <option value="">8:00</option>
+                    <option value="">8:30</option>
+                    <option value="">9:00</option>
+                    <option value="">9:30</option>
+                    <option value="">10:00</option>
+                    <option value="">10:30</option>
+                    <option value="">11:00</option>
+                    <option value="">13:00</option>
+                    <option value="">13:30</option>
+                    <option value="">14:00</option>
+                    <option value="">14:30</option>
+                    <option value="">15:00</option>
+                    <option value="">15:30</option>
+                    <option value="">16:00</option>
+                    <option value="">16:30</option>
+                    <option value="">17:00</option>
+                    <option value="">17:30</option>
+                    <option value="">18:00</option>
+                    <option value="">18:30</option>
+                    <option value="">19:00</option>
+                </select>
+                <br>
+                <br>
+                <button class="bg-orange-500 px-3 p-1 rounded-lg hover:ring-2 ring-orange-600 hover:bg-orange-700 text-sm">
+                    Agendar
+                </button>
+            </form>
+        </section>
     </div>
+    <footer class="text-center font-thin shadow-sm">
+        <div>
+            © 2025. Alan do Corte - Todos os direitos reservados.
+        </div>
+        <div>
+            <p>Links: <a class="hover:underline" href="https://www.instagram.com/alandocorte/" target="_blank">Instagram  |</a> <a class="hover:underline" href="https://l.instagram.com/?u=https%3A%2F%2Ftopsalao.com%2F%3Fid%3D109290%26fbclid%3DPAZXh0bgNhZW0CMTEAAaeNngQW-6GsP1F_62Otps39x80Znc5D8PLsyGHuVQOy78YIKm_RyVyRl04x2g_aem_C3ux5WYDp9B4OWFohusgMA&e=AT1ny9JRV-EpsnHIl6iZBCUkst8Db188MmX9nt-DI7sFuIeJwT3eUUId0RgtjwEUGrmpW-QJtRAr0M3LXUjRls_Hj9aLQb0qDnnjBNc" target="_blank">TopSalão  |</a> <p>WhatsApp: 83 98160-4610</p></p>
+        </div>
+    </footer>
+
