@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agendar || Alan do Corte</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Agendamento || Alan do Corte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Cookie&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="./output.css" rel="stylesheet">
+  <link href="./output1.css" rel="stylesheet">
   <link rel="shortcut icon" href="imagens/Aalan.webp" type="image/x-icon">
 </head>
 <body>
@@ -13,38 +14,38 @@
         <div class="beetween">
             <div class="flex items-center">
                 <img class="w-40" src="imagens/logoalanlaranja.png" alt="Logo Alan">
-                <span class="space-y-10 text-sm text-justify">
+                <span style="font-family: 'Cookie', cursive; font-size: 25px;" class="space-y-10 text-sm text-center">
                     O seu estilo em <br> boas mãos
                 </span>
             </div>
         </div>
-        <div>
-            <div>
-                <a class="px-5 font-normal hover:underline decoration-1 flex justify-start" href="https://www.google.com/maps/place/Alan+do+Corte/@-7.1457128,-34.8332386,17z/data=!3m1!4b1!4m6!3m5!1s0x7acc34a4a594dfb:0x78a139651c30cde2!8m2!3d-7.1457128!4d-34.8306583!16s%2Fg%2F11fk8cwctk?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Rua Abelardo Pereira dos Santos, 97</a>
+        <div class="text-center">
+            <div class="px-5 text-left">
+                <a class="font-normal hover:underline decoration-1 inline-block" href="https://www.google.com/maps/place/Alan+do+Corte/@-7.1457128,-34.8332386,17z/data=!3m1!4b1!4m6!3m5!1s0x7acc34a4a594dfb:0x78a139651c30cde2!8m2!3d-7.1457128!4d-34.8306583!16s%2Fg%2F11fk8cwctk?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D"target="_blank"> Rua Abelardo Pereira dos Santos, 97</a>
             </div>
-            <nav class="text-white space-x-20 flex justify-center">
-                <span><a class="hover:underline" href="index.html">Início</a></span>
-                <span><a class="hover:underline" href="#">Sobre nós</a></span>
-                <span><a class="hover:underline" href="#">Agendar corte</a></span>
-                <span><a class="hover:underline" href="#">Serviços</a></span>
+            <nav class="text-white space-x-20 flex justify-center m-xs pb-5">
+                <span><a class="hover:underline hover:text-gray-400" href="index.html">Início</a></span>
+                <span><a class="hover:underline hover:text-gray-400" href="sobrenos.html">Sobre nós</a></span>
+                <span><a class="hover:underline hover:text-gray-400" href="#">Agendamento</a></span>
+                <span><a class="hover:underline hover:text-gray-400" href="servicos.html">Serviços</a></span>
             </nav>
         </div>
     </header>
     <div>
-        <section class="items-center m-20 bg-orange-300 w-80 flex justify-center py-10 rounded-lg">
-            <form>
+        <section class="items-center mx-auto mt-20 bg-orange-300 w-80 flex justify-center py-10 rounded-lg">
+            <form method="get" action="cadastrofeito.html">
                 <p style="font-family: 'Noto Sans', sans-serif; font-weight: bold;">Faça o seu agendamento</p>
                 <br>
                 <br>
                 <br>
-                <input class="px-2 rounded-lg" type="text" placeholder="Nome Completo">
+                <input class="px-2 rounded-lg" type="text" placeholder="Nome Completo" required>
                 <br>
                 <br>
-                <input class="px-2 rounded-lg" type="tel" placeholder="Telefone (xx) xxxxx-xxxx">
+                <input class="px-2 rounded-lg" type="tel" placeholder="Telefone (xx) xxxxx-xxxx" required>
                 <br>
                 <br>
-                <select class="rounded-lg">
-                    <option value="Selecione o seu serviço">Escolha o seu serviço</option>
+                <select class="rounded-lg" required>
+                    <option value="" disabled selected>Escolha o seu serviço</option>
                     <option value="Corte">Corte  R$30,00</option>
                     <option value="Corte + Barba">Corte + Barba  R$50,00</option>
                     <option value="Corte + Sobrancelha">Corte + Sobrancelha  R$35,00</option>
@@ -69,7 +70,7 @@
                 </select>
                 <br>
                 <br>
-                <select class="px-2 rounded-lg">
+                <select class="px-2 rounded-lg" required>
                     <option value="" disabled selected>Horário</option>
                     <option value="">8:00</option>
                     <option value="">8:30</option>
@@ -94,18 +95,21 @@
                 </select>
                 <br>
                 <br>
-                <button class="bg-orange-500 px-3 p-1 rounded-lg hover:ring-2 ring-orange-600 hover:bg-orange-700 text-sm">
+                <button class="bg-orange-500 px-3 p-1 rounded-lg hover:ring-2 ring-orange-600 hover:bg-orange-700 text-sm" type="submit">
                     Agendar
                 </button>
             </form>
         </section>
     </div>
-    <footer class="text-center font-thin shadow-sm">
-        <div>
-            © 2025. Alan do Corte - Todos os direitos reservados.
-        </div>
-        <div>
-            <p>Links: <a class="hover:underline" href="https://www.instagram.com/alandocorte/" target="_blank">Instagram  |</a> <a class="hover:underline" href="https://l.instagram.com/?u=https%3A%2F%2Ftopsalao.com%2F%3Fid%3D109290%26fbclid%3DPAZXh0bgNhZW0CMTEAAaeNngQW-6GsP1F_62Otps39x80Znc5D8PLsyGHuVQOy78YIKm_RyVyRl04x2g_aem_C3ux5WYDp9B4OWFohusgMA&e=AT1ny9JRV-EpsnHIl6iZBCUkst8Db188MmX9nt-DI7sFuIeJwT3eUUId0RgtjwEUGrmpW-QJtRAr0M3LXUjRls_Hj9aLQb0qDnnjBNc" target="_blank">TopSalão  |</a> <p>WhatsApp: 83 98160-4610</p></p>
-        </div>
-    </footer>
-
+    <div>
+        <footer class="text-center font-thin pt-20 pb-1">
+            <div>
+                © 2025. Alan do Corte - Todos os direitos reservados.
+            </div>
+            <div>
+                <p>Links: <a class="hover:underline" href="https://www.instagram.com/alandocorte/" target="_blank">Instagram  |</a> <a class="hover:underline" href="https://topsalao.com/app/index.html?id=109290" target="_blank">TopSalão  |</a> <p>WhatsApp: 83 98160-4610</p></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

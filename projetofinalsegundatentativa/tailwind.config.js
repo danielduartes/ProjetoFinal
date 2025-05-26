@@ -7,6 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         noto: ['"Noto Sans"', 'sans-serif'],
+        ancizar: ['"Ancizar Serif"', 'sans-serif'],
+        cookie: ['"Cookie"', 'cursive'],
       },
     },
   },
